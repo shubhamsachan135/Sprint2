@@ -20,7 +20,7 @@ public  class WalletDao  {
 		return user;
 	}
 
-	public WalletAccount getAccount(int accountId) {
+	public WalletAccount getAccount(Long accountId) {
 		WalletAccount account = entityManager.find(WalletAccount.class, accountId);
 		return account;
 	}
@@ -29,6 +29,11 @@ public  class WalletDao  {
 	public void saveTransaction(WalletTransactions transaction) {
 		entityManager.persist(transaction);
 	}
+	
+	public void saveAccount(WalletAccount walletAccount) {
+		entityManager.persist(walletAccount);
+	}
+	
 	
 	
 	//public List<WalletTransactions> getTransactions(Integer accountIdId) {

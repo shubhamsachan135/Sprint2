@@ -6,16 +6,12 @@ import java.util.List;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "WalletAccount")
+@Table(name = "WalletAccounts")
 public class WalletAccount implements Serializable {
 	
-	private static final long serialVersionUID = 1L;
-
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "tran_seq")
-	
 	@Column(name = "accountID")
-	private Integer accountID;
+	private Long accountID;
 	
 	@Column(name = "accountBalance")
 	private Double accountBalance;
@@ -23,9 +19,15 @@ public class WalletAccount implements Serializable {
 	@OneToMany(cascade = CascadeType.ALL)
 	private List<WalletTransactions> transactionList;
 
-	public int getAccountID() {
+	public Long getAccountID() {
 		return accountID;
 	}
+	
+
+	public void setAccountID(Long accountID) {
+		this.accountID = accountID;
+	}
+
 
 	public Double getAccountBalance() {
 		return accountBalance;
@@ -35,9 +37,9 @@ public class WalletAccount implements Serializable {
 		this.accountBalance = accountBalance;
 	}
 
-	public WalletAccount(int accountID,Double accountBalance, List<WalletTransactions> transactionList) {
+	public WalletAccount(Long accountID,Double accountBalance, List<WalletTransactions> transactionList) {
 		super();
-
+                this.accountID=accountID;
 		this.accountBalance = accountBalance;
 		this.transactionList = transactionList;
 		

@@ -7,11 +7,18 @@
 <item elementID="=OnlinePaymentWalletDiscoveryService/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=OnlinePaymentWalletGatewayService/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=OnlinePaymentWalletGatewayService/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=OnlinepaymentWalletLoginRegister/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=OnlinepaymentWalletLoginRegister/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1588908186711_1" label="Java Test Sources" name="Java Test Sources">
 <item elementID="=OnlinePaymentWalletAddWithdraw/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=OnlinePaymentWalletDiscoveryService/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=OnlinePaymentWalletGatewayService/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=OnlinepaymentWalletLoginRegister/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1588909039958_2" label="Window Working Set" name="Aggregate for window 1588909039958"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1588990729746_3" label="Window Working Set" name="Aggregate for window 1588990729746"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1589079966486_4" label="Window Working Set" name="Aggregate for window 1589079966486"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1589163313838_5" label="Window Working Set" name="Aggregate for window 1589163313838"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1589199656477_6" label="Window Working Set" name="Aggregate for window 1589199656477"/>
 </workingSetManager>

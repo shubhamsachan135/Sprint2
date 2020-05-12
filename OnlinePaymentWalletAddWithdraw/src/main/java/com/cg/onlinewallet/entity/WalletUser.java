@@ -4,18 +4,16 @@ import java.io.Serializable;
 
 import javax.persistence.*;
 
-@Entity
-@Table(name = "WalletUser")
 public class WalletUser implements Serializable {
-	@Id
+	
 	private String userID;
 	private String userName;
 	private String password;
 	private String phoneNumber;
 	
 
-	@OneToOne(cascade = CascadeType.ALL)
-	WalletAccount accountDetail;
+	
+	
 
 	public String getUserID() {
 		return userID;
@@ -47,25 +45,16 @@ public class WalletUser implements Serializable {
 
 
 
-	public WalletUser(String userId,String userName, String password, String phoneNumber, 
-			WalletAccount accountDetail) {
+	public WalletUser(String userId,String userName, String password, String phoneNumber) {
 		super();
 		this.userID= userId;
 		this.userName = userName;
 		this.password = password;
 		this.phoneNumber = phoneNumber;
-		this.accountDetail = accountDetail;
+	
 	}
 
 	
-
-	public WalletAccount getAccountDetail() {
-		return accountDetail;
-	}
-
-	public void setAccountDetail(WalletAccount accountDetail) {
-		this.accountDetail = accountDetail;
-	}
 
 	public WalletUser() {
 		// TODO Auto-generated constructor stub

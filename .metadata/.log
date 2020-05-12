@@ -1,4 +1,4 @@
-!SESSION 2020-05-08 08:40:43.562 -----------------------------------------------
+!SESSION 2020-05-11 21:25:07.186 -----------------------------------------------
 eclipse.buildId=3.9.11.201912161221-RELEASE-e413
 java.version=1.8.0_241
 java.vendor=Oracle Corporation
@@ -6,131 +6,10 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product org.springsource.sts.ide
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.sts.ide
 
-!ENTRY com.genuitec.eclipse.startup 4 0 2020-05-08 08:50:01.401
-!MESSAGE wmic Windows Defender check failed
-!STACK 0
-java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
-	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
-	at java.lang.Runtime.exec(Runtime.java:620)
-	at java.lang.Runtime.exec(Runtime.java:485)
-	at com.genuitec.eclipse.startup.util.WindowsDefenderChecker.isWindowsDefenderActive(WindowsDefenderChecker.java:124)
-	at com.genuitec.eclipse.startup.util.WindowsDefenderChecker.checkWindowsDefender(WindowsDefenderChecker.java:90)
-	at com.genuitec.eclipse.startup.util.WindowsDefenderChecker.checkWindowsDefender(WindowsDefenderChecker.java:85)
-	at com.genuitec.eclipse.startup.util.WindowsDefenderChecker.checkWindowsDefenderIfNeeded(WindowsDefenderChecker.java:601)
-	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.finish(CustomStartupDialog.java:202)
-	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.workspaceChoosed(CustomStartupDialog.java:110)
-	at com.genuitec.eclipse.startup.dialogs.tabs.AbstractNewWorkspaceEditor.launchWorkspace(AbstractNewWorkspaceEditor.java:130)
-	at com.genuitec.eclipse.startup.dialogs.tabs.AbstractNewWorkspaceEditor$1.handleEvent(AbstractNewWorkspaceEditor.java:98)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4173)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1081)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
-	at org.eclipse.swt.widgets.Control.traverse(Control.java:4270)
-	at org.eclipse.swt.widgets.Control.translateTraversal(Control.java:4252)
-	at org.eclipse.swt.widgets.Display.translateTraversal(Display.java:4729)
-	at org.eclipse.swt.widgets.Display.filterMessage(Display.java:1217)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3581)
-	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
-	at org.eclipse.jface.window.Window.open(Window.java:799)
-	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.open(AbstactSideTabDialog.java:61)
-	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.prompt(CustomStartupDialog.java:336)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.showCustomDialog(IDEApplication.java:627)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.promptForWorkspace(IDEApplication.java:363)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.checkInstanceLocation(IDEApplication.java:280)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:140)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
-Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
-	at java.lang.ProcessImpl.create(Native Method)
-	at java.lang.ProcessImpl.<init>(ProcessImpl.java:444)
-	at java.lang.ProcessImpl.start(ProcessImpl.java:140)
-	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
-	... 44 more
+This is a continuation of log file C:\Users\Shubham\Sprint2_MicroServices\.metadata\.bak_0.log
+Created Time: 2020-05-11 21:33:39.694
 
-!ENTRY org.eclipse.ui 2 0 2020-05-08 08:51:20.198
-!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
-!SUBENTRY 1 org.eclipse.ui 2 0 2020-05-08 08:51:20.198
-!MESSAGE Cannot bind to an undefined command: plug-in='com.genuitec.eclipse.theming.ui', id='com.genuitec.myeclipse.help.darktheme.commandid'
-
-!ENTRY com.genuitec.eclipse.theming.ui 1 0 2020-05-08 08:51:29.474
-!MESSAGE A DevStyle Theme is being activated on this workspace; preparing colors and configuration
-
-!ENTRY com.genuitec.eclipse.theming.ui 1 0 2020-05-08 08:51:29.530
-!MESSAGE DevStyle has archived current color configurations to alternate preferences - will be restored when switching out of the DevStyle Theme
-
-!ENTRY org.eclipse.jface 2 0 2020-05-08 08:52:25.072
-!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
-!SUBENTRY 1 org.eclipse.jface 2 0 2020-05-08 08:52:25.072
-!MESSAGE A conflict occurred for CTRL+SHIFT+T:
-Binding(CTRL+SHIFT+T,
-	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
-		Open a type in a Java editor,
-		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@578cd644,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.contexts.window,,,system)
-Binding(CTRL+SHIFT+T,
-	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
-		,
-		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@31af3f22,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.contexts.window,,,system)
-
-!ENTRY org.eclipse.ui 2 2 2020-05-08 08:52:49.196
-!MESSAGE org.eclipse.jdt.junit.ResultView: Deprecated relationship "fast" should be converted to "stack".
-
-!ENTRY org.eclipse.ui 2 2 2020-05-08 08:52:49.198
-!MESSAGE org.springframework.ide.eclipse.aop.ui.navigator.aopReferenceModelNavigator: Deprecated relationship "fast" should be converted to "stack".
-
-!ENTRY org.eclipse.ui 2 2 2020-05-08 08:52:49.200
-!MESSAGE org.eclipse.contribution.xref.ui.views.XReferenceView: Deprecated relationship "fast" should be converted to "stack".
-
-!ENTRY com.genuitec.eclipse.theming.ui 4 0 2020-05-08 08:53:47.587
-!MESSAGE www.genuitec.com
-!STACK 0
-java.net.UnknownHostException: www.genuitec.com
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:606)
-	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:666)
-	at sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:173)
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
-	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
-	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:367)
-	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056)
-	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1570)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
-	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:352)
-	at com.genuitec.eclipse.theming.ui.IconDownloaderJob.getApprovedDefinitions(IconDownloaderJob.java:86)
-	at com.genuitec.eclipse.theming.ui.IconDownloaderJob.run(IconDownloaderJob.java:52)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-05-08 08:53:48.441
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-05-11 21:33:39.696
 !MESSAGE Connection to https://dist.springsource.com/release/STS/doc/updates.xml failed on dist.springsource.com. Retry attempt 0 started
 !STACK 0
 java.net.UnknownHostException: dist.springsource.com
@@ -155,8 +34,36 @@ java.net.UnknownHostException: dist.springsource.com
 	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
 	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2020-05-12 07:42:37.112 -----------------------------------------------
+eclipse.buildId=3.9.11.201912161221-RELEASE-e413
+java.version=1.8.0_241
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.sts.ide
 
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-05-08 08:53:48.447
+!ENTRY org.eclipse.jface 2 0 2020-05-12 07:43:38.708
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-05-12 07:43:38.708
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@21e60eed,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2b43eb71,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-05-12 07:44:36.987
 !MESSAGE Connection to https://spring.io/blog.atom failed on spring.io. Retry attempt 0 started
 !STACK 0
 java.net.UnknownHostException: spring.io
@@ -182,17 +89,500 @@ java.net.UnknownHostException: spring.io
 	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.egit.ui 2 0 2020-05-08 08:53:49.493
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-05-12 07:44:37.347
+!MESSAGE Connection to https://dist.springsource.com/release/STS/doc/updates.xml failed on dist.springsource.com. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: dist.springsource.com
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-05-12 07:44:44.119
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\Shubham'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
-!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-05-08 08:53:58.842
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-05-12 07:44:48.995
 !MESSAGE Removing part descriptor with the 'org.springsource.ide.eclipse.commons.browser.View' id and the 'Browser View' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
 
-!ENTRY org.eclipse.ui 4 4 2020-05-08 08:54:00.796
+!ENTRY org.eclipse.ui 4 4 2020-05-12 07:44:52.195
+!MESSAGE Unable to create part
+!STACK 1
+org.eclipse.ui.PartInitException: Plug-in org.springsource.ide.eclipse.commons.gettingstarted was unable to load class org.springsource.ide.eclipse.commons.gettingstarted.dashboard.WelcomeDashboard.
+	at org.eclipse.ui.internal.EditorReference.createPart(EditorReference.java:324)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPart(CompatibilityPart.java:300)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.createPart(CompatibilityEditor.java:61)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:338)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:998)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:963)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:408)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:331)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1002)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl$1.handleEvent(PartServiceImpl.java:107)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:146)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4622)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElementGen(ElementContainerImpl.java:170)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:188)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:651)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:615)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:790)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1236)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3205)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$9(WorkbenchPage.java:3110)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3108)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3078)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3061)
+	at org.springsource.ide.eclipse.dashboard.ui.actions.ShowDashboardPageAction$1.runInUIThread(ShowDashboardPageAction.java:77)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:95)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3961)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3588)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:633)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+Caused by: org.eclipse.core.runtime.CoreException: Plug-in org.springsource.ide.eclipse.commons.gettingstarted was unable to load class org.springsource.ide.eclipse.commons.gettingstarted.dashboard.WelcomeDashboard.
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:198)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:286)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:284)
+	at org.eclipse.ui.internal.registry.EditorDescriptor.createEditor(EditorDescriptor.java:231)
+	at org.eclipse.ui.internal.EditorReference.createPart(EditorReference.java:321)
+	... 82 more
+Caused by: java.lang.ClassNotFoundException: org.springsource.ide.eclipse.commons.gettingstarted.dashboard.WelcomeDashboard cannot be found by org.springsource.ide.eclipse.commons.gettingstarted_3.9.11.201912160745-RELEASE
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	... 90 more
+!SUBENTRY 1 org.eclipse.ui 4 1 2020-05-12 07:44:52.213
+!MESSAGE Plug-in org.springsource.ide.eclipse.commons.gettingstarted was unable to load class org.springsource.ide.eclipse.commons.gettingstarted.dashboard.WelcomeDashboard.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Plug-in org.springsource.ide.eclipse.commons.gettingstarted was unable to load class org.springsource.ide.eclipse.commons.gettingstarted.dashboard.WelcomeDashboard.
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:198)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:286)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:284)
+	at org.eclipse.ui.internal.registry.EditorDescriptor.createEditor(EditorDescriptor.java:231)
+	at org.eclipse.ui.internal.EditorReference.createPart(EditorReference.java:321)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPart(CompatibilityPart.java:300)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.createPart(CompatibilityEditor.java:61)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:338)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:998)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:963)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:408)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:331)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1002)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl$1.handleEvent(PartServiceImpl.java:107)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:146)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4622)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElementGen(ElementContainerImpl.java:170)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:188)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:651)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:615)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:790)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1236)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3205)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$9(WorkbenchPage.java:3110)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3108)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3078)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3061)
+	at org.springsource.ide.eclipse.dashboard.ui.actions.ShowDashboardPageAction$1.runInUIThread(ShowDashboardPageAction.java:77)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:95)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3961)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3588)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:633)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+Caused by: java.lang.ClassNotFoundException: org.springsource.ide.eclipse.commons.gettingstarted.dashboard.WelcomeDashboard cannot be found by org.springsource.ide.eclipse.commons.gettingstarted_3.9.11.201912160745-RELEASE
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	... 90 more
+!SUBENTRY 2 org.eclipse.equinox.registry 4 1 2020-05-12 07:44:52.215
+!MESSAGE Plug-in org.springsource.ide.eclipse.commons.gettingstarted was unable to load class org.springsource.ide.eclipse.commons.gettingstarted.dashboard.WelcomeDashboard.
+!STACK 0
+java.lang.ClassNotFoundException: org.springsource.ide.eclipse.commons.gettingstarted.dashboard.WelcomeDashboard cannot be found by org.springsource.ide.eclipse.commons.gettingstarted_3.9.11.201912160745-RELEASE
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:286)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:284)
+	at org.eclipse.ui.internal.registry.EditorDescriptor.createEditor(EditorDescriptor.java:231)
+	at org.eclipse.ui.internal.EditorReference.createPart(EditorReference.java:321)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPart(CompatibilityPart.java:300)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.createPart(CompatibilityEditor.java:61)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:338)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:998)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:963)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:408)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:331)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1002)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl$1.handleEvent(PartServiceImpl.java:107)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:146)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4622)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElementGen(ElementContainerImpl.java:170)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:188)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:651)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:615)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:790)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1236)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3205)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$9(WorkbenchPage.java:3110)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3108)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3078)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3061)
+	at org.springsource.ide.eclipse.dashboard.ui.actions.ShowDashboardPageAction$1.runInUIThread(ShowDashboardPageAction.java:77)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:95)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3961)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3588)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:633)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-05-12 08:44:38.697
+!MESSAGE Connection to https://spring.io/blog.atom failed on spring.io. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: spring.io
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-05-12 08:44:38.793
+!MESSAGE Connection to https://dist.springsource.com/release/STS/doc/updates.xml failed on dist.springsource.com. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: dist.springsource.com
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-05-12 09:44:41.428
+!MESSAGE Connection to https://spring.io/blog.atom failed on spring.io. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: spring.io
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-05-12 09:44:41.459
+!MESSAGE Connection to https://dist.springsource.com/release/STS/doc/updates.xml failed on dist.springsource.com. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: dist.springsource.com
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2020-05-12 10:33:53.768 -----------------------------------------------
+eclipse.buildId=3.9.11.201912161221-RELEASE-e413
+java.version=1.8.0_241
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.sts.ide
+
+!ENTRY org.eclipse.jface 2 0 2020-05-12 10:35:04.144
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-05-12 10:35:04.144
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@29a51ff1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6dacde96,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-05-12 10:37:59.614
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Shubham'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-05-12 10:38:02.608
+!MESSAGE Removing part descriptor with the 'org.springsource.ide.eclipse.commons.browser.View' id and the 'Browser View' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.ui 4 4 2020-05-12 10:38:13.965
 !MESSAGE Unable to create part
 !STACK 1
 org.eclipse.ui.PartInitException: Plug-in org.springsource.ide.eclipse.commons.gettingstarted was unable to load class org.springsource.ide.eclipse.commons.gettingstarted.dashboard.WelcomeDashboard.
@@ -246,8 +636,7 @@ org.eclipse.ui.PartInitException: Plug-in org.springsource.ide.eclipse.commons.g
 	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:651)
 	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:615)
 	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:790)
-	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.bringToTop(PartServiceImpl.java:404)
-	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1239)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1236)
 	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3205)
 	at org.eclipse.ui.internal.WorkbenchPage.lambda$9(WorkbenchPage.java:3110)
 	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
@@ -292,7 +681,7 @@ Caused by: org.eclipse.core.runtime.CoreException: Plug-in org.springsource.ide.
 	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:284)
 	at org.eclipse.ui.internal.registry.EditorDescriptor.createEditor(EditorDescriptor.java:231)
 	at org.eclipse.ui.internal.EditorReference.createPart(EditorReference.java:321)
-	... 84 more
+	... 83 more
 Caused by: java.lang.ClassNotFoundException: org.springsource.ide.eclipse.commons.gettingstarted.dashboard.WelcomeDashboard cannot be found by org.springsource.ide.eclipse.commons.gettingstarted_3.9.11.201912160745-RELEASE
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
@@ -301,8 +690,8 @@ Caused by: java.lang.ClassNotFoundException: org.springsource.ide.eclipse.common
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
 	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
 	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
-	... 92 more
-!SUBENTRY 1 org.eclipse.ui 4 1 2020-05-08 08:54:00.957
+	... 91 more
+!SUBENTRY 1 org.eclipse.ui 4 1 2020-05-12 10:38:14.115
 !MESSAGE Plug-in org.springsource.ide.eclipse.commons.gettingstarted was unable to load class org.springsource.ide.eclipse.commons.gettingstarted.dashboard.WelcomeDashboard.
 !STACK 1
 org.eclipse.core.runtime.CoreException: Plug-in org.springsource.ide.eclipse.commons.gettingstarted was unable to load class org.springsource.ide.eclipse.commons.gettingstarted.dashboard.WelcomeDashboard.
@@ -365,8 +754,7 @@ org.eclipse.core.runtime.CoreException: Plug-in org.springsource.ide.eclipse.com
 	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:651)
 	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:615)
 	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:790)
-	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.bringToTop(PartServiceImpl.java:404)
-	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1239)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1236)
 	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3205)
 	at org.eclipse.ui.internal.WorkbenchPage.lambda$9(WorkbenchPage.java:3110)
 	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
@@ -408,8 +796,8 @@ Caused by: java.lang.ClassNotFoundException: org.springsource.ide.eclipse.common
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
 	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
 	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
-	... 92 more
-!SUBENTRY 2 org.eclipse.equinox.registry 4 1 2020-05-08 08:54:00.959
+	... 91 more
+!SUBENTRY 2 org.eclipse.equinox.registry 4 1 2020-05-12 10:38:14.117
 !MESSAGE Plug-in org.springsource.ide.eclipse.commons.gettingstarted was unable to load class org.springsource.ide.eclipse.commons.gettingstarted.dashboard.WelcomeDashboard.
 !STACK 0
 java.lang.ClassNotFoundException: org.springsource.ide.eclipse.commons.gettingstarted.dashboard.WelcomeDashboard cannot be found by org.springsource.ide.eclipse.commons.gettingstarted_3.9.11.201912160745-RELEASE
@@ -477,8 +865,7 @@ java.lang.ClassNotFoundException: org.springsource.ide.eclipse.commons.gettingst
 	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:651)
 	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:615)
 	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:790)
-	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.bringToTop(PartServiceImpl.java:404)
-	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1239)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1236)
 	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3205)
 	at org.eclipse.ui.internal.WorkbenchPage.lambda$9(WorkbenchPage.java:3110)
 	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
@@ -513,139 +900,219 @@ java.lang.ClassNotFoundException: org.springsource.ide.eclipse.commons.gettingst
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-05-08 08:54:01.306
-!MESSAGE Connection to https://spring.io/blog.atom failed on spring.io. Retry attempt 0 started
+!ENTRY org.springframework.ide.eclipse.beans.core 1 0 2020-05-12 14:08:19.361
+!MESSAGE Error occured processing 'com.cg.onlinewallet.OnlinePaymentWalletApplication'
 !STACK 0
-java.net.UnknownHostException: spring.io
-	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
-	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
-	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
-	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
-	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
-	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+org.springframework.core.annotation.AnnotationConfigurationException: Attribute 'proxyBeanMethods' in annotation [org.springframework.boot.SpringBootConfiguration] is declared as an @AliasFor nonexistent attribute 'proxyBeanMethods' in annotation [org.springframework.context.annotation.Configuration].; nested exception is java.lang.NoSuchMethodException: org.springframework.context.annotation.Configuration.proxyBeanMethods()
+	at org.springframework.core.annotation.AnnotationUtils$AliasDescriptor.<init>(AnnotationUtils.java:2128)
+	at org.springframework.core.annotation.AnnotationUtils$AliasDescriptor.from(AnnotationUtils.java:2095)
+	at org.springframework.core.annotation.AnnotationUtils.getAttributeAliasNames(AnnotationUtils.java:1751)
+	at org.springframework.core.annotation.AnnotationUtils.isSynthesizable(AnnotationUtils.java:1710)
+	at org.springframework.core.annotation.AnnotationUtils.synthesizeAnnotation(AnnotationUtils.java:1493)
+	at org.springframework.core.annotation.AnnotationUtils.synthesizeAnnotationArray(AnnotationUtils.java:1597)
+	at org.springframework.core.annotation.AnnotationUtils.getAnnotations(AnnotationUtils.java:231)
+	at org.springframework.core.type.classreading.AnnotationAttributesReadingVisitor.visitEnd(AnnotationAttributesReadingVisitor.java:76)
+	at org.springframework.asm.ClassReader.readAnnotationValues(ClassReader.java:2020)
+	at org.springframework.asm.ClassReader.accept(ClassReader.java:676)
+	at org.springframework.asm.ClassReader.accept(ClassReader.java:527)
+	at org.springframework.ide.eclipse.core.java.classreading.JdtConnectedMetadataReader.<init>(JdtConnectedMetadataReader.java:45)
+	at org.springframework.ide.eclipse.core.java.classreading.JdtMetadataReaderFactory.getMetadataReader(JdtMetadataReaderFactory.java:53)
+	at org.springframework.ide.eclipse.core.java.classreading.CachingJdtMetadataReaderFactory.getMetadataReader(CachingJdtMetadataReaderFactory.java:38)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansJavaConfig.registerBean(BeansJavaConfig.java:368)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansJavaConfig$2.call(BeansJavaConfig.java:229)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansJavaConfig$2.call(BeansJavaConfig.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NoSuchMethodException: org.springframework.context.annotation.Configuration.proxyBeanMethods()
+	at java.lang.Class.getDeclaredMethod(Class.java:2130)
+	at org.springframework.core.annotation.AnnotationUtils$AliasDescriptor.<init>(AnnotationUtils.java:2121)
+	... 22 more
 
-!ENTRY com.vwmare.vfabric.ide.eclipse.tcserver.core 4 0 2020-05-08 08:54:41.457
-!MESSAGE Error creating server instance with command:
- "F:\Capgemini\Software_for_capgemini_Training_2020\spring-tool-suite-3.9.11.RELEASE-e4.14.0-win32-x86_64\sts-bundle\pivotal-tc-server\developer-4.0.4.RELEASE\tcserver.bat create base-instance -t base --force -v 9.0.13.B.RELEASE". Check access permission for the directory F:/Capgemini/Software_for_capgemini_Training_2020/spring-tool-suite-3.9.11.RELEASE-e4.14.0-win32-x86_64/sts-bundle/pivotal-tc-server/developer-4.0.4.RELEASE and its files and subdirectories.
-!SUBENTRY 1 com.vwmare.vfabric.ide.eclipse.tcserver.core 4 0 2020-05-08 08:54:41.458
-!MESSAGE The instance creation command failed and returned code 1
-!SUBENTRY 1 com.vwmare.vfabric.ide.eclipse.tcserver.core 4 0 2020-05-08 08:54:41.458
-!MESSAGE Output of the instance creation command:
-'MODE' is not recognized as an internal or external command,
-operable program or batch file.
-'create' command failed. Unable to determine if instance is already running. This indicates that the instance may have been created by an older version of tc Server or the instance has unexpected configuration information. The instance needs to be manually deleted.
-
-
-!ENTRY org.springsource.ide.eclipse.commons.configurator 4 0 2020-05-08 08:54:41.459
-!MESSAGE The server could not be created.
-!STACK 1
-org.eclipse.core.runtime.CoreException: Error creating server instance with command:
- "F:\Capgemini\Software_for_capgemini_Training_2020\spring-tool-suite-3.9.11.RELEASE-e4.14.0-win32-x86_64\sts-bundle\pivotal-tc-server\developer-4.0.4.RELEASE\tcserver.bat create base-instance -t base --force -v 9.0.13.B.RELEASE". Check access permission for the directory F:/Capgemini/Software_for_capgemini_Training_2020/spring-tool-suite-3.9.11.RELEASE-e4.14.0-win32-x86_64/sts-bundle/pivotal-tc-server/developer-4.0.4.RELEASE and its files and subdirectories.
-	at com.vmware.vfabric.ide.eclipse.tcserver.internal.core.TcServerUtil.handleResult(TcServerUtil.java:158)
-	at com.vmware.vfabric.ide.eclipse.tcserver.internal.core.TcServerUtil.executeInstanceCreation(TcServerUtil.java:111)
-	at com.vmware.vfabric.ide.eclipse.tcserver.internal.core.TcServer21ServerHandlerCallback.configureServer(TcServer21ServerHandlerCallback.java:48)
-	at org.springsource.ide.eclipse.commons.internal.configurator.server.ServerDescriptor$ServerHandlerCallbackDelegate.configureServer(ServerDescriptor.java:40)
-	at org.springsource.ide.eclipse.commons.configurator.ServerHandler.createServer(ServerHandler.java:318)
-	at org.springsource.ide.eclipse.commons.configurator.ServerHandler.createServer(ServerHandler.java:157)
-	at org.springsource.ide.eclipse.commons.internal.configurator.server.ConfigurableServerExtension.configure(ConfigurableServerExtension.java:70)
-	at org.springsource.ide.eclipse.commons.internal.configurator.ConfiguratorImporter$4.run(ConfiguratorImporter.java:439)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Contains: The instance creation command failed and returned code 1
-Contains: Output of the instance creation command:
-'MODE' is not recognized as an internal or external command,
-operable program or batch file.
-'create' command failed. Unable to determine if instance is already running. This indicates that the instance may have been created by an older version of tc Server or the instance has unexpected configuration information. The instance needs to be manually deleted.
-
-!SUBENTRY 1 com.vwmare.vfabric.ide.eclipse.tcserver.core 4 0 2020-05-08 08:54:41.460
-!MESSAGE Error creating server instance with command:
- "F:\Capgemini\Software_for_capgemini_Training_2020\spring-tool-suite-3.9.11.RELEASE-e4.14.0-win32-x86_64\sts-bundle\pivotal-tc-server\developer-4.0.4.RELEASE\tcserver.bat create base-instance -t base --force -v 9.0.13.B.RELEASE". Check access permission for the directory F:/Capgemini/Software_for_capgemini_Training_2020/spring-tool-suite-3.9.11.RELEASE-e4.14.0-win32-x86_64/sts-bundle/pivotal-tc-server/developer-4.0.4.RELEASE and its files and subdirectories.
-!SUBENTRY 2 com.vwmare.vfabric.ide.eclipse.tcserver.core 4 0 2020-05-08 08:54:41.460
-!MESSAGE The instance creation command failed and returned code 1
-!SUBENTRY 2 com.vwmare.vfabric.ide.eclipse.tcserver.core 4 0 2020-05-08 08:54:41.460
-!MESSAGE Output of the instance creation command:
-'MODE' is not recognized as an internal or external command,
-operable program or batch file.
-'create' command failed. Unable to determine if instance is already running. This indicates that the instance may have been created by an older version of tc Server or the instance has unexpected configuration information. The instance needs to be manually deleted.
-
-
-!ENTRY org.eclipse.ui 2 2 2020-05-08 08:57:43.134
-!MESSAGE org.eclipse.jdt.junit.ResultView: Deprecated relationship "fast" should be converted to "stack".
-
-!ENTRY org.eclipse.ui 2 2 2020-05-08 08:57:43.190
-!MESSAGE org.springframework.ide.eclipse.aop.ui.navigator.aopReferenceModelNavigator: Deprecated relationship "fast" should be converted to "stack".
-
-!ENTRY org.eclipse.ui 2 2 2020-05-08 08:57:43.191
-!MESSAGE org.eclipse.contribution.xref.ui.views.XReferenceView: Deprecated relationship "fast" should be converted to "stack".
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-05-08 09:54:35.098
-!MESSAGE Connection to https://dist.springsource.com/release/STS/doc/updates.xml failed on Remote host closed connection during handshake. Retry attempt 0 started
+!ENTRY org.eclipse.ui 4 4 2020-05-12 14:39:11.690
+!MESSAGE To avoid deadlock while executing Display.syncExec() with argument: org.eclipse.debug.internal.ui.sourcelookup.Prompter$$Lambda$1063/768975023@2ce46ac9, thread Worker-73: Launching OnlinePaymentWalletAddWithdraw - OnlinePaymentWalletApplication will interrupt UI thread.
+!SUBENTRY 1 org.eclipse.ui 4 4 2020-05-12 14:39:11.690
+!MESSAGE Worker-73: Launching OnlinePaymentWalletAddWithdraw - OnlinePaymentWalletApplication thread is an instance of Worker or owns an ILock
 !STACK 0
-javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
-	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:994)
-	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1367)
-	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1395)
-	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1379)
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:396)
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:355)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
-	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
-	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
-	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+java.lang.IllegalStateException: Call stack for thread Worker-73: Launching OnlinePaymentWalletAddWithdraw - OnlinePaymentWalletApplication
+	at sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:448)
+	at org.eclipse.ui.internal.UILockListener.reportInterruption(UILockListener.java:209)
+	at org.eclipse.ui.internal.UILockListener.interruptUI(UILockListener.java:179)
+	at org.eclipse.ui.internal.PendingSyncExec.waitUntilExecuted(PendingSyncExec.java:92)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:155)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4622)
+	at org.eclipse.debug.internal.ui.sourcelookup.Prompter.handleStatus(Prompter.java:81)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.saveBeforeLaunch(LaunchConfigurationDelegate.java:246)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.preLaunchCheck(LaunchConfigurationDelegate.java:198)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.preLaunchCheck(AbstractJavaLaunchConfigurationDelegate.java:1020)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:719)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1017)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1220)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: java.io.EOFException: SSL peer shut down incorrectly
-	at sun.security.ssl.InputRecord.read(InputRecord.java:505)
-	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:975)
-	... 19 more
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-05-08 09:54:36.309
-!MESSAGE Connection to https://spring.io/blog.atom failed on Remote host closed connection during handshake. Retry attempt 0 started
+!SUBENTRY 1 org.eclipse.ui 4 4 2020-05-12 14:39:11.691
+!MESSAGE UI thread waiting on a job or lock.
 !STACK 0
-javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
-	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:994)
-	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1367)
-	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1395)
-	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1379)
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:396)
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:355)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
-	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
-	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
-	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: java.io.EOFException: SSL peer shut down incorrectly
-	at sun.security.ssl.InputRecord.read(InputRecord.java:505)
-	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:975)
-	... 19 more
+java.lang.IllegalStateException: Call stack for thread main
+	at org.eclipse.ui.internal.PendingSyncExec.run(PendingSyncExec.java:75)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:171)
+	at org.eclipse.ui.internal.UISynchronizer.lambda$0(UISynchronizer.java:152)
+	at org.eclipse.ui.internal.UISynchronizer$$Lambda$593/191132954.run(Unknown Source)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3961)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3588)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:633)
+	at org.eclipse.ui.internal.Workbench$$Lambda$112/1075537833.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+
+!ENTRY org.springframework.ide.eclipse.beans.core 1 0 2020-05-12 14:39:25.849
+!MESSAGE Error occured processing 'com.cg.onlinewallet.OnlinePaymentWalletApplication'
+!STACK 0
+org.springframework.core.annotation.AnnotationConfigurationException: Attribute 'proxyBeanMethods' in annotation [org.springframework.boot.SpringBootConfiguration] is declared as an @AliasFor nonexistent attribute 'proxyBeanMethods' in annotation [org.springframework.context.annotation.Configuration].; nested exception is java.lang.NoSuchMethodException: org.springframework.context.annotation.Configuration.proxyBeanMethods()
+	at org.springframework.core.annotation.AnnotationUtils$AliasDescriptor.<init>(AnnotationUtils.java:2128)
+	at org.springframework.core.annotation.AnnotationUtils$AliasDescriptor.from(AnnotationUtils.java:2095)
+	at org.springframework.core.annotation.AnnotationUtils.getAttributeAliasNames(AnnotationUtils.java:1751)
+	at org.springframework.core.annotation.AnnotationUtils.isSynthesizable(AnnotationUtils.java:1710)
+	at org.springframework.core.annotation.AnnotationUtils.synthesizeAnnotation(AnnotationUtils.java:1493)
+	at org.springframework.core.annotation.AnnotationUtils.synthesizeAnnotationArray(AnnotationUtils.java:1597)
+	at org.springframework.core.annotation.AnnotationUtils.getAnnotations(AnnotationUtils.java:231)
+	at org.springframework.core.type.classreading.AnnotationAttributesReadingVisitor.visitEnd(AnnotationAttributesReadingVisitor.java:76)
+	at org.springframework.asm.ClassReader.readAnnotationValues(ClassReader.java:2020)
+	at org.springframework.asm.ClassReader.accept(ClassReader.java:676)
+	at org.springframework.asm.ClassReader.accept(ClassReader.java:527)
+	at org.springframework.ide.eclipse.core.java.classreading.JdtConnectedMetadataReader.<init>(JdtConnectedMetadataReader.java:45)
+	at org.springframework.ide.eclipse.core.java.classreading.JdtMetadataReaderFactory.getMetadataReader(JdtMetadataReaderFactory.java:53)
+	at org.springframework.ide.eclipse.core.java.classreading.CachingJdtMetadataReaderFactory.getMetadataReader(CachingJdtMetadataReaderFactory.java:38)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansJavaConfig.registerBean(BeansJavaConfig.java:368)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansJavaConfig$2.call(BeansJavaConfig.java:229)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansJavaConfig$2.call(BeansJavaConfig.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NoSuchMethodException: org.springframework.context.annotation.Configuration.proxyBeanMethods()
+	at java.lang.Class.getDeclaredMethod(Class.java:2130)
+	at org.springframework.core.annotation.AnnotationUtils$AliasDescriptor.<init>(AnnotationUtils.java:2121)
+	... 22 more
+
+!ENTRY org.springframework.ide.eclipse.beans.core 1 0 2020-05-12 16:19:53.549
+!MESSAGE Error occured processing 'com.cg.onlinewallet.OnlinePaymentWalletApplication'
+!STACK 0
+org.springframework.core.annotation.AnnotationConfigurationException: Attribute 'proxyBeanMethods' in annotation [org.springframework.boot.SpringBootConfiguration] is declared as an @AliasFor nonexistent attribute 'proxyBeanMethods' in annotation [org.springframework.context.annotation.Configuration].; nested exception is java.lang.NoSuchMethodException: org.springframework.context.annotation.Configuration.proxyBeanMethods()
+	at org.springframework.core.annotation.AnnotationUtils$AliasDescriptor.<init>(AnnotationUtils.java:2128)
+	at org.springframework.core.annotation.AnnotationUtils$AliasDescriptor.from(AnnotationUtils.java:2095)
+	at org.springframework.core.annotation.AnnotationUtils.getAttributeAliasNames(AnnotationUtils.java:1751)
+	at org.springframework.core.annotation.AnnotationUtils.isSynthesizable(AnnotationUtils.java:1710)
+	at org.springframework.core.annotation.AnnotationUtils.synthesizeAnnotation(AnnotationUtils.java:1493)
+	at org.springframework.core.annotation.AnnotationUtils.synthesizeAnnotationArray(AnnotationUtils.java:1597)
+	at org.springframework.core.annotation.AnnotationUtils.getAnnotations(AnnotationUtils.java:231)
+	at org.springframework.core.type.classreading.AnnotationAttributesReadingVisitor.visitEnd(AnnotationAttributesReadingVisitor.java:76)
+	at org.springframework.asm.ClassReader.readAnnotationValues(ClassReader.java:2020)
+	at org.springframework.asm.ClassReader.accept(ClassReader.java:676)
+	at org.springframework.asm.ClassReader.accept(ClassReader.java:527)
+	at org.springframework.ide.eclipse.core.java.classreading.JdtConnectedMetadataReader.<init>(JdtConnectedMetadataReader.java:45)
+	at org.springframework.ide.eclipse.core.java.classreading.JdtMetadataReaderFactory.getMetadataReader(JdtMetadataReaderFactory.java:53)
+	at org.springframework.ide.eclipse.core.java.classreading.CachingJdtMetadataReaderFactory.getMetadataReader(CachingJdtMetadataReaderFactory.java:38)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansJavaConfig.registerBean(BeansJavaConfig.java:368)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansJavaConfig$2.call(BeansJavaConfig.java:229)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansJavaConfig$2.call(BeansJavaConfig.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NoSuchMethodException: org.springframework.context.annotation.Configuration.proxyBeanMethods()
+	at java.lang.Class.getDeclaredMethod(Class.java:2130)
+	at org.springframework.core.annotation.AnnotationUtils$AliasDescriptor.<init>(AnnotationUtils.java:2121)
+	... 22 more
+
+!ENTRY org.springframework.ide.eclipse.beans.core 1 0 2020-05-12 17:46:08.254
+!MESSAGE Error occured processing 'com.capgemini.PaymentWalletApplication'
+!STACK 0
+org.springframework.core.annotation.AnnotationConfigurationException: Attribute 'proxyBeanMethods' in annotation [org.springframework.boot.SpringBootConfiguration] is declared as an @AliasFor nonexistent attribute 'proxyBeanMethods' in annotation [org.springframework.context.annotation.Configuration].; nested exception is java.lang.NoSuchMethodException: org.springframework.context.annotation.Configuration.proxyBeanMethods()
+	at org.springframework.core.annotation.AnnotationUtils$AliasDescriptor.<init>(AnnotationUtils.java:2128)
+	at org.springframework.core.annotation.AnnotationUtils$AliasDescriptor.from(AnnotationUtils.java:2095)
+	at org.springframework.core.annotation.AnnotationUtils.getAttributeAliasNames(AnnotationUtils.java:1751)
+	at org.springframework.core.annotation.AnnotationUtils.isSynthesizable(AnnotationUtils.java:1710)
+	at org.springframework.core.annotation.AnnotationUtils.synthesizeAnnotation(AnnotationUtils.java:1493)
+	at org.springframework.core.annotation.AnnotationUtils.synthesizeAnnotationArray(AnnotationUtils.java:1597)
+	at org.springframework.core.annotation.AnnotationUtils.getAnnotations(AnnotationUtils.java:231)
+	at org.springframework.core.type.classreading.AnnotationAttributesReadingVisitor.visitEnd(AnnotationAttributesReadingVisitor.java:76)
+	at org.springframework.asm.ClassReader.readAnnotationValues(ClassReader.java:2020)
+	at org.springframework.asm.ClassReader.accept(ClassReader.java:676)
+	at org.springframework.asm.ClassReader.accept(ClassReader.java:527)
+	at org.springframework.ide.eclipse.core.java.classreading.JdtConnectedMetadataReader.<init>(JdtConnectedMetadataReader.java:45)
+	at org.springframework.ide.eclipse.core.java.classreading.JdtMetadataReaderFactory.getMetadataReader(JdtMetadataReaderFactory.java:53)
+	at org.springframework.ide.eclipse.core.java.classreading.CachingJdtMetadataReaderFactory.getMetadataReader(CachingJdtMetadataReaderFactory.java:38)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansJavaConfig.registerBean(BeansJavaConfig.java:368)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansJavaConfig$2.call(BeansJavaConfig.java:229)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansJavaConfig$2.call(BeansJavaConfig.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NoSuchMethodException: org.springframework.context.annotation.Configuration.proxyBeanMethods()
+	at java.lang.Class.getDeclaredMethod(Class.java:2130)
+	at org.springframework.core.annotation.AnnotationUtils$AliasDescriptor.<init>(AnnotationUtils.java:2121)
+	... 22 more
+
+!ENTRY org.springframework.ide.eclipse.beans.core 1 0 2020-05-12 18:06:29.974
+!MESSAGE Error occured processing 'com.capgemini.PaymentWalletApplication'
+!STACK 0
+org.springframework.core.annotation.AnnotationConfigurationException: Attribute 'proxyBeanMethods' in annotation [org.springframework.boot.SpringBootConfiguration] is declared as an @AliasFor nonexistent attribute 'proxyBeanMethods' in annotation [org.springframework.context.annotation.Configuration].; nested exception is java.lang.NoSuchMethodException: org.springframework.context.annotation.Configuration.proxyBeanMethods()
+	at org.springframework.core.annotation.AnnotationUtils$AliasDescriptor.<init>(AnnotationUtils.java:2128)
+	at org.springframework.core.annotation.AnnotationUtils$AliasDescriptor.from(AnnotationUtils.java:2095)
+	at org.springframework.core.annotation.AnnotationUtils.getAttributeAliasNames(AnnotationUtils.java:1751)
+	at org.springframework.core.annotation.AnnotationUtils.isSynthesizable(AnnotationUtils.java:1710)
+	at org.springframework.core.annotation.AnnotationUtils.synthesizeAnnotation(AnnotationUtils.java:1493)
+	at org.springframework.core.annotation.AnnotationUtils.synthesizeAnnotationArray(AnnotationUtils.java:1597)
+	at org.springframework.core.annotation.AnnotationUtils.getAnnotations(AnnotationUtils.java:231)
+	at org.springframework.core.type.classreading.AnnotationAttributesReadingVisitor.visitEnd(AnnotationAttributesReadingVisitor.java:76)
+	at org.springframework.asm.ClassReader.readAnnotationValues(ClassReader.java:2020)
+	at org.springframework.asm.ClassReader.accept(ClassReader.java:676)
+	at org.springframework.asm.ClassReader.accept(ClassReader.java:527)
+	at org.springframework.ide.eclipse.core.java.classreading.JdtConnectedMetadataReader.<init>(JdtConnectedMetadataReader.java:45)
+	at org.springframework.ide.eclipse.core.java.classreading.JdtMetadataReaderFactory.getMetadataReader(JdtMetadataReaderFactory.java:53)
+	at org.springframework.ide.eclipse.core.java.classreading.CachingJdtMetadataReaderFactory.getMetadataReader(CachingJdtMetadataReaderFactory.java:38)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansJavaConfig.registerBean(BeansJavaConfig.java:368)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansJavaConfig$2.call(BeansJavaConfig.java:229)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansJavaConfig$2.call(BeansJavaConfig.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NoSuchMethodException: org.springframework.context.annotation.Configuration.proxyBeanMethods()
+	at java.lang.Class.getDeclaredMethod(Class.java:2130)
+	at org.springframework.core.annotation.AnnotationUtils$AliasDescriptor.<init>(AnnotationUtils.java:2121)
+	... 22 more
