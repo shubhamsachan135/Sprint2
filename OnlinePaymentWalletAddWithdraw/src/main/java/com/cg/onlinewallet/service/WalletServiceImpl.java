@@ -92,49 +92,38 @@ public class WalletServiceImpl implements WalletService {
 	}
 	
 	
-	public WalletTransactions transferMoney(Long userId, Double amount,Long AccountId) {
-		Long senderAccountId=userId;
-		Long recieverAccountId=AccountId;
-		WalletAccount account1 = dao.getAccount(senderAccountId);
-		WalletAccount account2 = dao.getAccount(recieverAccountId);
-		Double balance1 = account1.getAccountBalance();
-		Double balance2 = account2.getAccountBalance();
-		if((account2!=null)&& (balance1>=amount)) {
-		   balance2 += amount;
-		   account2.setAccountBalance(balance2);
-		   balance1 -= amount;
-		   account1.setAccountBalance(balance1);
+	public WalletTransactions transferMoney(Long userId, Double Amount,Long AccountId) {
+		WalletTransactions transaction = null ;
+		Long sid=userId;
+		Long rid=AccountId;
+		System.out.println(sid);
+		System.out.println(rid);
+		
+    	if((dao.getAccount(rid)!=null)&& (dao.getAccount(sid).getAccountBalance()>=Amount)) {
+		 
+			
+		dao.getAccount(sid).setAccountBalance(dao.getAccount(sid).getAccountBalance()-Amount);
+			
+		dao.getAccount(rid).setAccountBalance(dao.getAccount(rid).getAccountBalance()+Amount);
 
-		   Double balance = account1.getAccountBalance();
-
-			WalletTransactions transaction = createTransactionHistory("Transferred Successfully to "+recieverAccountId,
-					LocalDateTime.now(), amount, balance);
-
-			return transaction;
+		  transaction = createTransactionHistory("Transferred Successfully to "+ rid,
+				LocalDateTime.now(), Amount, dao.getAccount(sid).getAccountBalance());
+		      
 			
 		}
-		else if(balance1<amount) {
-			 Double balance = account1.getAccountBalance();
-
-				WalletTransactions transaction = createTransactionHistory("Can't Transfer,Less Wallet Balance",
-						LocalDateTime.now(), amount, balance);
-
-				return transaction;
-		}
-		else {
-			Double balance = account1.getAccountBalance();
-
-			WalletTransactions transaction = createTransactionHistory("Can't Transfer,"+recieverAccountId+"is Not a registered AccountId",
-					LocalDateTime.now(), amount, balance);
-
-			return transaction;	
-			
-		}
+    	
+    	else if(dao.getAccount(sid).getAccountBalance()<Amount) {
+    		 transaction = createTransactionHistory("Can't Transfer,Less Wallet Balance ",
+    					LocalDateTime.now(), Amount, dao.getAccount(sid).getAccountBalance());
+    	}
 		
+    	else {
+    		 transaction = createTransactionHistory("Can't Transfer,Invalid AccountId ",
+ 					LocalDateTime.now(), Amount, dao.getAccount(sid).getAccountBalance());
+    	}
+		return transaction;
 		
-		
-		
-
+    
 		
 		
 	}

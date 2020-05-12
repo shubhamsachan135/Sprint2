@@ -61,7 +61,7 @@ public class WalletController {
 	
 
 	@GetMapping("/transfer/{userId}/{amount}/{accountId}")
-	public ResponseEntity<WalletTransactions> transferwMoney(@PathVariable("userId") Long userId,@PathVariable("amount") Double amount,@PathVariable("userId") Long accountId) {
+	public ResponseEntity<WalletTransactions> transferwMoney(@PathVariable("userId") Long userId,@PathVariable("amount") Double amount,@PathVariable("accountId") Long accountId) {
 		WalletTransactions wTransaction = (WalletTransactions)  service.transferMoney(userId, amount,accountId);
 		return new ResponseEntity<WalletTransactions>(wTransaction, HttpStatus.OK);
 	}
