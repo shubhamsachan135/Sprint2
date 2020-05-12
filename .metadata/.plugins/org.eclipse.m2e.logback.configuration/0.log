@@ -1494,3 +1494,5 @@ java.io.StreamCorruptedException: invalid stream header: 00000000
 2020-05-12 18:30:16,831 [Worker-116: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2020-05-12 18:30:16,834 [Worker-116: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2020-05-12 18:30:16,949 [Worker-116: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-12 18:30:16,954 [Worker-116: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-12 18:30:16,954 [Worker-116: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Shubham\Sprint2_MicroServices\OnlinepaymentWalletLoginRegister\src\test\resources
