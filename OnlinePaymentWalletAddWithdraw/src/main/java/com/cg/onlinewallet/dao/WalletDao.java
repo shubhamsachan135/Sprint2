@@ -45,5 +45,13 @@ public  class WalletDao  {
 		 entityManager.persist(wUser);
 		 entityManager.flush();
 	    }
+
+	public void deleteAccount(Long accountId) {
+		WalletAccount account = entityManager.find(WalletAccount.class, accountId);
+		entityManager.remove(account);
+		
+	}
+
+	
 	
 }

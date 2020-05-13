@@ -15,5 +15,6 @@ public interface WalletService {
 	public void createAccount(WalletAccount walletAccount);
 	public WalletAccount getAccount(long id);
 	public WalletTransactions transferMoney(Long userId, Double amount,Long AccountId);
+	public void deleteAccount(long id);
 	
 }

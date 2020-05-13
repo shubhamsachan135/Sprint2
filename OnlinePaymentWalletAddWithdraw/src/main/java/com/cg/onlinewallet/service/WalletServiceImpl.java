@@ -32,8 +32,12 @@ public class WalletServiceImpl implements WalletService {
 		dao.saveAccount(walletAccount);
 		
 	}
-
-
+	
+	@Override
+	public void  deleteAccount(long id) {
+		dao.deleteAccount(id);
+	}
+	
 	@Override
 	public WalletAccount getAccount(long id) {
 		
@@ -93,6 +97,7 @@ public class WalletServiceImpl implements WalletService {
 	
 	
 	public WalletTransactions transferMoney(Long userId, Double Amount,Long AccountId) {
+		dao.getAccount(userId).setAccountBalance(dao.getAccount(userId).getAccountBalance()+0.00);
 		WalletTransactions transaction = null ;
 		Long sid=userId;
 		Long rid=AccountId;

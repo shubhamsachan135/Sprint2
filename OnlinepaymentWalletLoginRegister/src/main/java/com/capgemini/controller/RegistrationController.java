@@ -22,13 +22,18 @@ import com.capgemini.exception.ResourceNotFoundException;
 import com.capgemini.model.WalletUserModel;
 import com.capgemini.entity.WalletUser;
 import com.capgemini.repository.RegistrationRepository;
+import com.capgemini.service.AddWithdrawProxyService;
 import com.capgemini.service.RegistrationService;
 
 
 
 
 @RestController
+@CrossOrigin(origins = "http://localhost:4200")
 public class RegistrationController {
+	@Autowired
+	private AddWithdrawProxyService awProxyService;
+	
 	@Autowired
 	private RegistrationService service;
 	
@@ -82,6 +87,7 @@ public class RegistrationController {
 	
 	
 			@GetMapping(value = "/walletUser/{phonenumber}")
+			@CrossOrigin(origins = "http://localhost:4200")
 			public ResponseEntity<WalletUser> getWalletUserById(@PathVariable(value="phonenumber") Long phonenumber )throws ResourceNotFoundException {
 				WalletUser walletUser=repo.findById(phonenumber)
 						.orElseThrow(() -> new ResourceNotFoundException("Wallet user not found for phone number : " + phonenumber));
@@ -128,6 +134,8 @@ public class RegistrationController {
 			throws ResourceNotFoundException {
 		WalletUser walletUser = repo.findById(phonenumber)
 				.orElseThrow(() -> new ResourceNotFoundException("Employee not found for this id :: " + phonenumber));
+		
+		awProxyService.deleteAccount(phonenumber);
 		repo.delete(walletUser);
 		Map<String, Boolean> response = new HashMap<>();
 		response.put("deleted", Boolean.TRUE);

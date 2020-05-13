@@ -1658,3 +1658,51 @@ java.io.StreamCorruptedException: invalid stream header: 00000000
 2020-05-12 23:18:07,524 [Worker-61: Launching OnlinePaymentWalletAddWithdraw - OnlinePaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2020-05-12 23:18:07,540 [Worker-61: Launching OnlinePaymentWalletAddWithdraw - OnlinePaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2020-05-12 23:18:07,540 [Worker-61: Launching OnlinePaymentWalletAddWithdraw - OnlinePaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Shubham\Sprint2_MicroServices\OnlinePaymentWalletAddWithdraw\src\test\resources
+2020-05-13 08:15:42,661 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-05-13 08:15:47,738 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Updating Gradle version information cache failed. Using outdated cache.
+2020-05-13 10:07:27,351 [Worker-52: Launching OnlinepaymentWalletLoginRegister - PaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-13 10:07:29,600 [Worker-52: Launching OnlinepaymentWalletLoginRegister - PaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-05-13 10:07:29,862 [Worker-52: Launching OnlinepaymentWalletLoginRegister - PaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-13 10:07:29,872 [Worker-52: Launching OnlinepaymentWalletLoginRegister - PaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-13 10:07:29,873 [Worker-52: Launching OnlinepaymentWalletLoginRegister - PaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Shubham\Sprint2_MicroServices\OnlinepaymentWalletLoginRegister\src\test\resources
+2020-05-13 10:11:03,022 [Worker-50: Launching OnlinePaymentWalletAddWithdraw - OnlinePaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-13 10:11:03,024 [Worker-50: Launching OnlinePaymentWalletAddWithdraw - OnlinePaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-05-13 10:11:03,292 [Worker-50: Launching OnlinePaymentWalletAddWithdraw - OnlinePaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-13 10:11:03,295 [Worker-50: Launching OnlinePaymentWalletAddWithdraw - OnlinePaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-13 10:11:03,295 [Worker-50: Launching OnlinePaymentWalletAddWithdraw - OnlinePaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Shubham\Sprint2_MicroServices\OnlinePaymentWalletAddWithdraw\src\test\resources
+2020-05-13 10:37:55,755 [Worker-61: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-13 10:37:56,948 [Worker-61: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-05-13 10:37:56,961 [Worker-61: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-13 10:37:56,968 [Worker-61: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-13 10:37:56,969 [Worker-61: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Shubham\Sprint2_MicroServices\OnlinePaymentWalletAddWithdraw\src\test\resources
+2020-05-13 11:09:52,850 [Worker-65: Launching OnlinePaymentWalletAddWithdraw - OnlinePaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-13 11:09:53,057 [Worker-65: Launching OnlinePaymentWalletAddWithdraw - OnlinePaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-05-13 11:09:53,130 [Worker-65: Launching OnlinePaymentWalletAddWithdraw - OnlinePaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-13 11:09:53,213 [Worker-65: Launching OnlinePaymentWalletAddWithdraw - OnlinePaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-13 11:09:53,215 [Worker-65: Launching OnlinePaymentWalletAddWithdraw - OnlinePaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Shubham\Sprint2_MicroServices\OnlinePaymentWalletAddWithdraw\src\test\resources
+2020-05-13 12:04:22,761 [Worker-77: Launching OnlinepaymentWalletLoginRegister - PaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-13 12:04:23,202 [Worker-77: Launching OnlinepaymentWalletLoginRegister - PaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-05-13 12:04:23,459 [Worker-77: Launching OnlinepaymentWalletLoginRegister - PaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-13 12:04:23,473 [Worker-77: Launching OnlinepaymentWalletLoginRegister - PaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-13 12:04:23,493 [Worker-77: Launching OnlinepaymentWalletLoginRegister - PaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Shubham\Sprint2_MicroServices\OnlinepaymentWalletLoginRegister\src\test\resources
+2020-05-13 12:08:00,070 [Worker-88: Launching OnlinePaymentWalletAddWithdraw - OnlinePaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-13 12:08:00,074 [Worker-88: Launching OnlinePaymentWalletAddWithdraw - OnlinePaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-05-13 12:08:00,124 [Worker-88: Launching OnlinePaymentWalletAddWithdraw - OnlinePaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-13 12:08:00,127 [Worker-88: Launching OnlinePaymentWalletAddWithdraw - OnlinePaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-13 12:08:00,127 [Worker-88: Launching OnlinePaymentWalletAddWithdraw - OnlinePaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Shubham\Sprint2_MicroServices\OnlinePaymentWalletAddWithdraw\src\test\resources
+2020-05-13 13:31:52,892 [Worker-112: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-13 13:31:53,605 [Worker-112: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-05-13 13:31:53,890 [Worker-112: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-13 13:31:55,266 [Worker-112: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-13 13:31:55,325 [Worker-112: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Shubham\Sprint2_MicroServices\OnlinePaymentWalletAddWithdraw\src\test\resources
+2020-05-13 15:25:38,797 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-05-13 15:48:17,670 [Worker-25: Launching OnlinePaymentWalletAddWithdraw - OnlinePaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-13 15:48:18,794 [Worker-25: Launching OnlinePaymentWalletAddWithdraw - OnlinePaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-05-13 15:48:18,960 [Worker-25: Launching OnlinePaymentWalletAddWithdraw - OnlinePaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-13 15:48:18,968 [Worker-25: Launching OnlinePaymentWalletAddWithdraw - OnlinePaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-13 15:48:18,969 [Worker-25: Launching OnlinePaymentWalletAddWithdraw - OnlinePaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Shubham\Sprint2_MicroServices\OnlinePaymentWalletAddWithdraw\src\test\resources
+2020-05-13 21:34:56,600 [Worker-48: Launching OnlinepaymentWalletLoginRegister - PaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-13 21:34:56,649 [Worker-48: Launching OnlinepaymentWalletLoginRegister - PaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-05-13 21:34:56,697 [Worker-48: Launching OnlinepaymentWalletLoginRegister - PaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-13 21:34:56,708 [Worker-48: Launching OnlinepaymentWalletLoginRegister - PaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-13 21:34:56,708 [Worker-48: Launching OnlinepaymentWalletLoginRegister - PaymentWalletApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Shubham\Sprint2_MicroServices\OnlinepaymentWalletLoginRegister\src\test\resources

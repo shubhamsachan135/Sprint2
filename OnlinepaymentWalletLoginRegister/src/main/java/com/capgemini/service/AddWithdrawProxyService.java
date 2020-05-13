@@ -2,6 +2,7 @@ package com.capgemini.service;
 
 import org.springframework.cloud.netflix.ribbon.RibbonClient;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -19,5 +20,8 @@ public interface AddWithdrawProxyService {
       
       @GetMapping("/wallet/{id}")
       public WalletAccount getAccount(@PathVariable(name="id") long id);
+      
+      @DeleteMapping("/wallet/{id}")
+      public void deleteAccount(@PathVariable(name="id") long id);
 	
 }
